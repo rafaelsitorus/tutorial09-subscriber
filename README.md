@@ -11,3 +11,7 @@ dimana 5672 merupakan port inisial dari AMQP 0-9-1, tetapi itu bukan berarti AMQ
 
 ![alt text](image.png)
 Total queue saya adalah 10, perbedaan queue dapat terjadi karena traffic yang dihadapi oleh RabbitMQ server yang berbeda, kemungkinan juga berbeda (Frekuensi cargo run).
+
+![alt text](image-2.png)
+![alt text](image-3.png)
+Saat tiga terminal subscriber dijalankan secara bersamaan, sistem memiliki lebih banyak konsumen aktif yang bekerja secara paralel untuk menerima dan memproses pesan dari RabbitMQ. Hal ini meningkatkan tingkat konsumsi pesan karena beban kerja dibagi ke lebih banyak proses secara simultan. Akibatnya, laju pemrosesan pesan (message rate) menjadi lebih cepat dibandingkan ketika hanya satu terminal subscriber yang berjalan, karena dalam kasus tersebut hanya ada satu konsumen yang menangani seluruh beban pesan secara berurutan.
