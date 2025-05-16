@@ -8,3 +8,6 @@ komunikasi antara aplikasi software dengan cara pertukaran pesan.
 merupakan username untuk mengautentikasi RabbitMQ, dan guest kedua merupakan passwordnya. Sedangkan localhost merupakan nama host
 dari server RabbitMQ yang tersambung dengan komputer kita. Terakhir, 5672 merupakan nomor port RabbitMQ khusus untuk koneksi AMQP,
 dimana 5672 merupakan port inisial dari AMQP 0-9-1, tetapi itu bukan berarti AMQP terbatas pada suatu port yang eksklusif.
+
+![alt text](image.png)
+Total queue saya adalah 10, perbedaan queue dapat terjadi karena traffic yang dihadapi oleh RabbitMQ server yang berbeda, kemungkinan juga berbeda (Frekuensi cargo run).
